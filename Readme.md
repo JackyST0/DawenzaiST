@@ -37,9 +37,9 @@
 * ###### -u ----- 是用来指定当前你选择哪条分支，默认刚创建项目是只有一条分支 master 。
 
 ## git 过程中的 bug ：
-1. ```! [rejected] master -> master (fetch first)``` ----- 在 push 远程服务器的时候发现出现此错误；原因是没有同步远程的master，所以我们需要先同步一下 ```git pull origin master``` ,再重新 push 即可。
-![git 图片](https://github.com/JackyST0/Markdown/blob/master/1.png)
-2. ```error: remote origin already exists.``` ----- 提示远程仓库已存在，我们可以先输入 ```git remote -v``` 来查看远程仓库是否是自己的的仓库，是则可不用理会，否则我们输入 ```git remote rm origin``` 删除关联的 origin 的远程库，然后我们再重新关联上自己仓库即可。
-![git 图片](https://github.com/JackyST0/Markdown/blob/master/2.png)
+##### 1. ```! [rejected] master -> master (fetch first)``` ----- 在 push 远程服务器的时候发现出现此错误；原因是没有同步远程的 master，所以我们需要先同步一下 ```git pull origin master``` ，再重新 push 即可。
+![git 图片](https://github.com/JackyST0/Markdown/blob/master/bug%201.png)
+##### 2. ```error: remote origin already exists.``` ----- 提示远程仓库已存在，我们可以先输入 ```git remote -v``` 来查看远程仓库是否是自己的的仓库，是则可不用理会，否则我们输入 ```git remote rm origin``` 删除关联的 origin 的远程库，然后我们再重新关联上自己仓库即可。
+![git 图片](https://github.com/JackyST0/Markdown/blob/master/bug%202.png)
 
 
