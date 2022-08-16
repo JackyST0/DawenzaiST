@@ -25,7 +25,7 @@
 * ###### 输入 git status ----- 可查看当前文件夹里未被上传到 git 列表上的文件。
 ##### 5. 输入 git remote add origin "github 上对应仓库的 URL" ----- 指定 github 上对应的 URL 来关联了本地网络和 git 服务器的一些关系。（反复执行该命令，会提示）
 ```
-　　　fatal: 远程 origin 已经存在。
+　　　error: remote origin already exists.
 ```
 #####　6. 输入 git push -u origin master ----- 把要上传的文件真正推送到 git 服务器上。（提交后，会提示如下）
 ```
