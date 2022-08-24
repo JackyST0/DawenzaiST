@@ -24,7 +24,7 @@
 * ###### -m "这里填入描述文件的一些信息" ----- 是作为以后出现代码冲突，进行回退的首要理论依据。
 * ###### 输入 git status ----- 可查看当前文件夹里未被上传到 git 列表上的文件。
 ##### 5. 输入 git remote add origin "github 上对应仓库的 URL" ----- 指定 github 上对应的 URL 来关联了本地网络和 git 服务器的一些关系。
-#####　6. 输入 git push -u origin master ----- 把要上传的文件真正推送到 git 服务器上。（提交后，会提示如下）
+##### 6. 输入 git push -u origin master ----- 把要上传的文件真正推送到 git 服务器上。（提交后，会提示如下）
 ```
       Username for 'https://github.com'：               ---输入注册 github 的 username
       Password for 'https://afei-itcastedu@github.com': ---输入密码
