@@ -48,7 +48,7 @@
 ##### 3. ```! [rejected] master -> master (non-fast-forward)``` ----- 在 push 远程服务器的时候发现出现此错误；原因是 github 中的 README.md 文件不在本地代码目录中或和本地代码不同步。
 ###### 解决方法：
 ##### 可参考 bug1 的解决方法，若还是不行可以尝试使用 ```git push -f``` 以达到把本地修改的代码强制推上去的目的。
-![git 图片](https://github.com/JackyST0/Markdown/blob/master/bug%203.png)
+![git 图片](https://github.com/JackyST0/Markdown/blob/master/bug%203%20.png)
 ##### 4. ```error: Your local changes to the following files would be overwritten by merge:``` ----- 原因是因为有人修改了线上的代码文件，而我们本地也修改了代码文件，这时进行pull自然就会产生冲突。
 ###### 解决方法：
 ##### 执行以下代码：
