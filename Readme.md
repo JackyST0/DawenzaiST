@@ -36,6 +36,8 @@
 ###### 提示：
 * ###### -u ----- 是用来指定当前你选择哪条分支，默认刚创建项目是只有一条分支 master 。
 
+- - -
+
 ## git 过程中的 bug ：
 ##### 1. ```! [rejected] master -> master (fetch first)``` ----- 在 push 远程服务器的时候发现出现此错误；原因是线上版本的內容比你电脑里这份还要新，所以 Git 不让你推上去。 
 ###### 解决方法：
@@ -60,6 +62,14 @@
 ##### 如此一来，服务器上的代码更新到了本地，而且你本地修改的代码也没有被覆盖，之后使用add，commit，push 命令即可更新本地代码到服务器了。
 ![git 图片](https://github.com/JackyST0/Markdown/blob/master/bug%204.png)
 
+- - - 
+
+## 其他命令：
+- ##### git pull --rebase origin master
+```
+该命令的意思是把远程库中的更新合并到（pull=fetch+merge）本地库中，
+–-rebase的作用是取消掉本地库中刚刚的commit，并把他们接到更新后的版本库之中。
+```
 
 
 
