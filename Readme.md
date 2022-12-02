@@ -42,15 +42,15 @@
 ##### 1. ```! [rejected] master -> master (fetch first)``` ----- 在 push 远程服务器的时候发现出现此错误；原因是线上版本的內容比你电脑里这份还要新，所以 Git 不让你推上去。 
 ###### 解决方法：
 ##### 因为你电脑里的内容是比较旧的的，所以你应该先拉一份线上版本的回來更新```git pull origin master``` ，然后再重新 push 即可。
-![git 图片](https://github.com/JackyST0/Markdown/blob/master/bug%201.png)
+![git 图片](https://raw.githubusercontent.com/JackyST0/Markdown/master/bug%201.png)
 ##### 2. ```error: remote origin already exists.``` ----- 提示远程仓库已存在。
 ###### 解决方法：
 ##### 我们可以先输入 ```git remote -v``` 来查看远程仓库是否是自己的的仓库，是则可不用理会，否则我们输入 ```git remote rm origin``` 删除关联的 origin 的远程库，然后我们再重新关联上自己仓库即可。
-![git 图片](https://github.com/JackyST0/Markdown/blob/master/bug%202.png)
+![git 图片](https://raw.githubusercontent.com/JackyST0/Markdown/master/bug%202.png)
 ##### 3. ```! [rejected] master -> master (non-fast-forward)``` ----- 在 push 远程服务器的时候发现出现此错误；原因是 github 中的 README.md 文件不在本地代码目录中或和本地代码不同步。
 ###### 解决方法：
 ##### 可参考 bug1 的解决方法，若还是不行可以尝试使用 ```git push -f``` 以达到把本地修改的代码强制推上去的目的。
-![git 图片](https://github.com/JackyST0/Markdown/blob/master/bug%203%20.png)
+![git 图片](https://raw.githubusercontent.com/JackyST0/Markdown/master/bug%203%20.png)
 ##### 4. ```error: Your local changes to the following files would be overwritten by merge:``` ----- 原因是因为有人修改了线上的代码文件，而我们本地也修改了代码文件，这时进行pull自然就会产生冲突。
 ###### 解决方法：
 ##### 执行以下代码：
@@ -60,7 +60,7 @@
       git stash pop
 ```
 ##### 如此一来，服务器上的代码更新到了本地，而且你本地修改的代码也没有被覆盖，之后使用add，commit，push 命令即可更新本地代码到服务器了。
-![git 图片](https://github.com/JackyST0/Markdown/blob/master/bug%204.png)
+![git 图片](https://raw.githubusercontent.com/JackyST0/Markdown/master/bug%204.png)
 
 - - - 
 
